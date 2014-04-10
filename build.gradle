@@ -1,0 +1,20 @@
+apply plugin: 'base'
+
+task dist(type:Zip) {
+  baseName = "app"
+  destinationDir = new File("$projectDir/target")
+  includes = [
+    "assets/",
+    "lib/",
+    "node_modules/",
+    "server/",
+    "vendor/",
+    "app.js",
+    "index.html",
+    "package.json"
+  ]
+
+
+  from projectDir
+
+}

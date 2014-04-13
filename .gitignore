@@ -21,3 +21,5 @@ results
 node_modules
 npm-debug.log
 run.sh
+bees-env.xml
+.idea

@@ -1,6 +1,7 @@
 Setup for OSX
 -------------
 
+
 1. [Install homebrew](http://brew.sh/)
 1. `brew install node`
 1. `brew install mongodb`

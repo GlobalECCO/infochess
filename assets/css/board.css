@@ -1195,11 +1195,11 @@ body.black .board {
   opacity: 0.0;
 }
 .flash-animation {
-  -webkit-animation:flash-left 2s 1;
-     -moz-animation:flash-left 2s 1;
-      -ms-animation:flash-left 2s 1;
-       -o-animation:flash-left 2s 1;
-          animation:flash-left 2s 1;
+  -webkit-animation:flash-left 5s 1;
+     -moz-animation:flash-left 5s 1;
+      -ms-animation:flash-left 5s 1;
+       -o-animation:flash-left 5s 1;
+          animation:flash-left 5s 1;
 }
 .flash .main {
   font-weight: bold;
@@ -1217,7 +1217,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -webkit-transform: scale(1,1) rotate(-15deg) translate(-40%, -25%);
     -webkit-transform-origin: center center;
   }
@@ -1230,7 +1230,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -moz-transform: scale(1,1) rotate(-15deg) translate(-40%, -25%);
     -moz-transform-origin: center center;
   }
@@ -1243,7 +1243,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -o-transform: scale(1,1) rotate(-15deg) translate(-40%, -25%);
     -o-transform-origin: center center;
   }
@@ -1256,7 +1256,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     transform: scale(1,1) rotate(-15deg) translate(-40%, -25%);
     transform-origin: center center;
   }
@@ -1269,7 +1269,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -webkit-transform: scale(1,1) rotate(15deg) translate(40%, 25%);
     -webkit-transform-origin: center center;
   }
@@ -1282,7 +1282,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -moz-transform: scale(1,1) rotate(15deg) translate(40%, 25%);
     -moz-transform-origin: center center;
   }
@@ -1295,7 +1295,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     -o-transform: scale(1,1) rotate(15deg) translate(40%, 25%);
     -o-transform-origin: center center;
   }
@@ -1308,7 +1308,7 @@ body.black .board {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 1.0;
     transform: scale(1,1) rotate(15deg) translate(40%, 25%);
     transform-origin: center center;
   }

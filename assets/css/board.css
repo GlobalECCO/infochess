@@ -1191,8 +1191,7 @@ body.black .board {
   text-transform: uppercase;
   z-index: 50000;
   text-align: center;
-  color: #E44;
-  opacity: 0.0;
+  color: #EE4;
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;
@@ -1209,6 +1208,13 @@ body.black .board {
   font-weight: bold;
   font-size: 45px;
 }
+.flash .failure {
+  color: #f03030;
+}
+.flash .success {
+  color: rgb(19, 220, 89);
+}
+
 @-webkit-keyframes flash-left {
   0% {
     opacity: 0;

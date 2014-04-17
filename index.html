@@ -45,41 +45,41 @@
   </head>
   <body>
     <input type="hidden" id="username" value="player" />
-    <div id="flashes">
+    <div id="flashes" class="selectable">
       <div id="psyop" class="flash">
-        <div class="main">Psyop attack</div>
+        <div class="main">Psyop </div>
         <div class="success">
-          <div class="attacker message">
+          <div class="attacker message success">
             Success!
           </div>
-          <div class="defender message">
-            Piece lost!
+          <div class="defender message failure">
+            Failed - Piece lost
           </div>
         </div>
         <div class="defended">
-          <div class="attacker message">
+          <div class="attacker message failure">
             DEFENDED!
           </div>
-          <div class="defender message">
+          <div class="defender message success">
             No effect!
           </div>
         </div>
       </div>
       <div id="ew" class="flash">
-        <div class="main">Electronic Warfare</div>
+        <div class="main">E-Warfare </div>
         <div class="success">
-          <div class="attacker message">
-            Success!
+          <div class="attacker message success">
+            Attack Successful!
           </div>
-          <div class="defender message">
-            Communications jammed
+          <div class="defender message failure">
+            Failed: Comms jammed!
           </div>
         </div>
         <div class="defended">
-          <div class="attacker message">
-            DEFENDED!
+          <div class="attacker message failure">
+            Attack Unsuccessful!
           </div>
-          <div class="defender message">
+          <div class="defender message success">
             No effect!
           </div>
         </div>

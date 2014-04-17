@@ -930,7 +930,7 @@ ul li.separator {
 }
 
 body.white .board {
-  background: top left no-repeat url('../images/board_base-white.png');
+  background: top left no-repeat url('../images/board_base-white.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;

@@ -49,44 +49,43 @@
   <body>
     <input type="hidden" id="username" value="player" />
     <div id="flashes">
-      <div id="psyop" class="flash">
-        <div class="main">Psyop attack</div>
-        <div class="success">
-          <div class="attacker message">
-            Success!
-          </div>
-          <div class="defender message">
-            Piece lost!
-          </div>
+
+      <div class="selectable">
+        <div class="psyop attacker success flash">
+          <div class="main">Psyop Attack</div>
+          <div class="message success">Success!</div>
         </div>
-        <div class="defended">
-          <div class="attacker message">
-            DEFENDED!
-          </div>
-          <div class="defender message">
-            No effect!
-          </div>
+        <div class="psyop attacker defended flash">
+          <div class="main">Psyop Attack</div>
+          <div class="message failure">DEFENDED!</div>
         </div>
-      </div>
-      <div id="ew" class="flash">
-        <div class="main">Electronic Warfare</div>
-        <div class="success">
-          <div class="attacker message">
-            Success!
-          </div>
-          <div class="defender message">
-            Communications jammed
-          </div>
+        <div class="psyop defender success flash">
+          <div class="main">Psyop Defense</div>
+          <div class="message failure">Failed - Piece lost</div>
         </div>
-        <div class="defended">
-          <div class="attacker message">
-            DEFENDED!
-          </div>
-          <div class="defender message">
-            No effect!
-          </div>
+        <div class="psyop defender defended flash">
+          <div class="main">Psyop Defense</div>
+          <div class="message success">No effect!</div>
+        </div>
+
+        <div class="ew attacker success flash">
+          <div class="main">E-Warfare Attack</div>
+          <div class="message success">Attack Successful!</div>
+        </div>
+        <div class="ew attacker defended flash">
+          <div class="main">E-Warfare Attack</div>
+          <div class="message failure">Attack Unsuccessful!</div>
+        </div>
+        <div class="ew defender success flash">
+          <div class="main">E-Warfare Defense</div>
+          <div class="message failure">Failed: Comms jammed!</div>
+        </div>
+        <div class="ew defender defended flash">
+          <div class="main">E-Warfare Defense</div>
+          <div class="message success">No effect!</div>
         </div>
       </div>
+
     </div>
     <div id="settings_dialog" class="dialog" title="Settings">
       <div class="dialog_content_wrapper">
@@ -210,30 +209,30 @@
           </div>
           <div id="ew_actions" class="actions_container" title="Causes your opponent to skip their physical move. They may still make an IW attack.">
             <div id="ew_main" class="iw_main"></div>
-            <div id="ew_normal" class="strength first">
+            <div id="ew_normal" class="strength first" title="Will have no effect if defended against.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="ew_reinforced" class="strength second" title="Reinforced attacks are indefensible.">
+            <div id="ew_reinforced" class="strength second" title="Will have an effect regardless of it is defended against or not.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="ew_feint" class="strength third disabled" title="Attack has no effect if it is not defended against. Only possible when attack cost is 2.">
+            <div id="ew_feint" class="strength third disabled" title="Will have no effect whether defended against or not. Only possible when attack cost is 2.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
           </div>
           <div id="psyop_actions" class="actions_container" title="Removes pawn furthest from their king. Removes furthest piece if they have no pawns. Removes the king if they have no other pieces.">
             <div id="psyop_main" class="iw_main"></div>
-            <div id="psyop_normal" class="strength first">
+            <div id="psyop_normal" class="strength first" title="Will have no effect if defended against.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="psyop_reinforced" class="strength second" title="Reinforced attacks are indefensible.">
+            <div id="psyop_reinforced" class="strength second" title="Will have an effect regardless of it is defended against or not.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="psyop_feint" class="strength third disabled" title="Attack has no effect if it is not defended against. Only possible when attack cost is 2.">
+            <div id="psyop_feint" class="strength third disabled" title="Will have no effect whether defended against or not. Only possible when attack cost is 2.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>

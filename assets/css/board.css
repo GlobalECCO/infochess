@@ -953,7 +953,7 @@ body.black .board {
   width: 588px;
   height: 588px;
   padding: 18px;
-  z-index: 100;
+  z-index: 99;
 }
 .board_overlay {
   position: absolute;
@@ -1022,9 +1022,13 @@ body.black .board {
   margin: 3px;
 }
 
+.clickable, .shadow_piece, .removal_marker {
+  cursor: pointer;
+}
+
 .invisible_piece {
   /* done in JS so that we can reanimate the gif without reloading it
-    background: top left no-repeat url('../images/invisible_piece.gif'); 
+    background: top left no-repeat url('../images/invisible_piece.gif');
   */
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -1191,8 +1195,8 @@ body.black .board {
   text-transform: uppercase;
   z-index: 50000;
   text-align: center;
-  color: #E44;
-  opacity: 0.0;
+  color: #EE4;
+  background: #11FF99;
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;
@@ -1209,6 +1213,13 @@ body.black .board {
   font-weight: bold;
   font-size: 45px;
 }
+.flash .failure {
+  color: #f03030;
+}
+.flash .success {
+  color: rgb(19, 220, 89);
+}
+
 @-webkit-keyframes flash-left {
   0% {
     opacity: 0;

@@ -1022,9 +1022,13 @@ body.black .board {
   margin: 3px;
 }
 
+.clickable, .shadow_piece, .removal_marker {
+  cursor: pointer;
+}
+
 .invisible_piece {
   /* done in JS so that we can reanimate the gif without reloading it
-    background: top left no-repeat url('../images/invisible_piece.gif'); 
+    background: top left no-repeat url('../images/invisible_piece.gif');
   */
   -webkit-background-size:100%;
      -moz-background-size:100%;

@@ -953,7 +953,7 @@ body.black .board {
   width: 588px;
   height: 588px;
   padding: 18px;
-  z-index: 100;
+  z-index: 99;
 }
 .board_overlay {
   position: absolute;
@@ -1192,6 +1192,7 @@ body.black .board {
   z-index: 50000;
   text-align: center;
   color: #EE4;
+  background: #11FF99;
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;

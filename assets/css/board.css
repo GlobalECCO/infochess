@@ -1015,7 +1015,15 @@ body.black .board {
 .shadow_piece {
   opacity: 0.4;
 }
-.shadow_piece, .soldier_piece, .temp_piece, .normal_piece, .invisible_piece, .psyop_capture {
+
+.shadow_piece {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: 14px;
+}
+
+.soldier_piece, .temp_piece, .normal_piece, .invisible_piece, .psyop_capture {
   position: absolute;
   width: 68px;
   height: 68px;
@@ -1151,6 +1159,10 @@ body.black .board {
   background: top left no-repeat url('../images/pawn_black-invisible.68x68.png');
 }
 
+.shadow_piece {
+  background-size: contain;
+}
+
 .intersection {
   width: 60px;
   height: 60px;
@@ -1161,7 +1173,6 @@ body.black .board {
   float: left;
   color: white;
 }
-
 
 .square_hover {
   background-color: rgb(255, 255, 0) !important;

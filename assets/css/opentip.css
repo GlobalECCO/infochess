@@ -100,7 +100,8 @@
 }
 .opentip-container .opentip {
   position: relative;
-  font-size: 13px;
+  font-family: sans-serif;
+  font-size: 20px;
   line-height: 120%;
   padding: 9px 14px;
   color: #4f4b47;
@@ -198,8 +199,8 @@
   filter: none;
 }
 .ot-title {
-  font-family: FollowTheMoneyfont, sans-serif;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   cursor: default;
@@ -207,8 +208,8 @@
 .ot-content
 {
   cursor: default;
-  font-family: FollowTheMoneyfont;
-  font-size: 11px;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 @-moz-keyframes otloading {
   0% {
@@ -294,60 +295,4 @@
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-.tooltip-userdefined
-{
-  font-family: sans-serif;
-  font-size: 12px;
-  cursor: default;
-}
-
-.costTooltip, .incomeTooltip
-{
-  width: 100%;
-  font-size: 14px;
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.incomeTooltip
-{
-  color: green;
-}
-
-.costTooltip
-{
-  color: red;
-}
-
-.costTooltipNumber, .incomeTooltipNumber
-{
-  width: 30px;
-  height: 30px;
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: #000000;
-  border-radius: 100%;
-  vertical-align: middle;
-  padding: 6px;
-  display: inline-block;
-  cursor: default;
-}
-
-.incomeTooltipNumber
-{
-  border: 3px solid green;
-  color: green;
-}
-
-.costTooltipNumber
-{
-  border: 3px solid red;
-  color: red;
 }

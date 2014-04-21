@@ -1,5 +1,4 @@
 .selectable {
-  cursor: hand;
   cursor: pointer;
   -webkit-animation:selectable 1700ms ease-in-out infinite;
      -moz-animation:selectable 1700ms ease-in-out infinite;
@@ -230,7 +229,7 @@ img.vertical-aligner {
 #army_selector #ready {
   left: 233px;
 }
-#army_selector #ready #indicator {
+.indicator {
   position: absolute;
   left: 10px;
   top: 1px;
@@ -240,7 +239,7 @@ img.vertical-aligner {
      -moz-border-radius:10px;
           border-radius:10px;
 }
-#army_selector #ready.ready #indicator {
+.ready .indicator {
   background: top left no-repeat url('../images/checkmark.svg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -249,7 +248,7 @@ img.vertical-aligner {
   background-color: #00FF00;
   opacity: 0.5;
 }
-#army_selector #ready.unready #indicator {
+.unready .indicator {
   background: top left no-repeat url('../images/x.svg');
   -webkit-background-size:100%;
      -moz-background-size:100%;

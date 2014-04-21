@@ -30,10 +30,10 @@ body.black .board {
 .removal_marker {
   background: top left no-repeat url('../images/removal_marker_ie.gif');
 }
-#army_selector #ready.ready #indicator {
+.ready .indicator {
   background: top left no-repeat url('../images/checkmark_ie.gif');
 }
-#army_selector #ready.unready #indicator {
+.unready .indicator {
   background: top left no-repeat url('../images/x_ie.gif');
 }
 

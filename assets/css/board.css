@@ -1249,6 +1249,11 @@ body.black .board {
   color: rgb(19, 220, 89);
 }
 
+.MOVE, .PSYOP_ATTACK, .EW_ATTACK, .IW_DEFEND, .IW_IGNORE, .PAWN_UPGRADE, .END_TURN {
+  padding-left: 2em;
+}
+
+
 @-webkit-keyframes flash-left {
   0% {
     opacity: 0;

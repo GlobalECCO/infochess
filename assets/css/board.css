@@ -229,7 +229,7 @@ img.vertical-aligner {
 #army_selector #ready {
   left: 233px;
 }
-.indicator {
+#army_selector #ready #indicator {
   position: absolute;
   left: 10px;
   top: 1px;
@@ -239,7 +239,7 @@ img.vertical-aligner {
      -moz-border-radius:10px;
           border-radius:10px;
 }
-.ready .indicator {
+#army_selector #ready.ready #indicator {
   background: top left no-repeat url('../images/checkmark.svg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -248,7 +248,7 @@ img.vertical-aligner {
   background-color: #00FF00;
   opacity: 0.5;
 }
-.unready .indicator {
+#army_selector #ready.unready #indicator {
   background: top left no-repeat url('../images/x.svg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -659,6 +659,7 @@ ul#pieces_list > li {
 }
 
 .setting_button {
+  cursor: pointer;
   padding: 1px;
   position: relative;
   height: 25px;

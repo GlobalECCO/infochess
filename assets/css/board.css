@@ -1192,7 +1192,8 @@ body.black .board {
   z-index: 50000;
   text-align: center;
   color: #EE4;
-  background: #11FF99;
+  background: #7B9388;
+  border: #A9E6CE solid 3px;
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;

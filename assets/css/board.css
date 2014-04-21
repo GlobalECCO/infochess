@@ -1250,6 +1250,10 @@ body.black .board {
   color: rgb(19, 220, 89);
 }
 
+#flashes {
+  display: none;
+}
+
 @-webkit-keyframes flash-left {
   0% {
     opacity: 0;

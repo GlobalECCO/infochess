@@ -7,6 +7,8 @@
     <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
     <link rel="stylesheet" href="css/board.css" />
     <link rel="stylesheet" href="vendor/jquery-ui-1.10.2.custom/css/dot-luv/jquery-ui-1.10.2.custom.min.css" />
+    <link rel="stylesheet" href="css/opentip.css" />
+    <link rel="stylesheet" href="css/tutorial.css" />
     <!--[if IE]>
     <link rel="stylesheet" href="css/ie8.css" />
     <![endif]-->
@@ -14,6 +16,7 @@
     <script type="text/javascript" src="js/mustache.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.32104.js"></script>
     <script src="vendor/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/opentip-native.js"></script>
     <!--[if lt IE 9]>
     <script src="js/ie9-2.1b4.min.js"></script>
     <![endif]-->
@@ -46,7 +49,7 @@
   <body>
     <input type="hidden" id="username" value="player" />
     <div id="flashes">
-      
+
       <div class="selectable">
         <div class="psyop attacker success flash">
           <div class="main">Psyop Attack</div>
@@ -82,9 +85,9 @@
           <div class="message success">Attack defeated!</div>
         </div>
       </div>
-      
+
     </div>
-    <div id="settings_dialog" class="dialog" title="Settings">
+    <div id="settings_dialog" class="dialog">
       <div class="dialog_content_wrapper">
         <div id="settings_content" class="dialog_content">
           <div class="close_button close"></div>
@@ -168,15 +171,15 @@
       <div id="board" class="board">
         <div id="pieces" class="board_overlay"></div>
         <div id="opponent_status"></div>
-        <div id="pawn_capture" title="See if any pawns can capture an invisible piece. If they can, that move must be taken.">
+        <div id="pawn_capture" class="clickable" data-ot="See if any pawns can capture an invisible piece. If they can, that move must be taken.">
           <img src="images/transparent_pixel.gif" class="vertical-aligner">
           Pawn Capture
         </div>
       </div>
       <div id="side_area">
         <div id="settings_overlay">
-          <div id="settings" class="setting_button"></div>
-          <div id="volume_control" class="toggle_sound setting_button volume_control_on"></div>
+          <div id="settings" class="setting_button" data-ot="Show game settings."></div>
+          <div id="volume_control" class="toggle_sound setting_button volume_control_on" data-ot="Toggle sound."></div>
         </div>
         <div id="army_selector" class="side_selector">
           <div id="points_indicator" class="points_indicator">
@@ -189,11 +192,11 @@
           </div>
           <div id="piece_selectors">
           </div>
-          <div id="reset" class="button" title="Clears the board of placed pieces">
+          <div id="reset" class="button" data-ot="Clears the board of placed pieces">
             <img src="images/transparent_pixel.gif" class="vertical-aligner">
             Reset
           </div>
-          <div id="ready" class="button unready" title="Finalises your army">
+          <div id="ready" class="button unready" data-ot="Finalises your army">
             <div id="indicator"></div>
             <img src="images/transparent_pixel.gif" class="vertical-aligner">
             Ready
@@ -204,37 +207,39 @@
           </div>
           <div id="ew_points_indicator" class="points_indicator">
           </div>
-          <div id="ew_actions" class="actions_container" title="Causes your opponent to skip their physical move. They may still make an IW attack.">
-            <div id="ew_main" class="iw_main"></div>
-            <div id="ew_normal" class="strength first">
+          <div id="ew_actions" class="actions_container">
+            <div id="ew_main" class="iw_main" data-ot="Causes your opponent to skip their physical move. They may still make an IW attack."></div>
+            <div id="ew_normal" class="strength first" data-ot="Will have no effect if defended against.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="ew_reinforced" class="strength second" title="Reinforced attacks are indefensible.">
+            <div id="ew_reinforced" class="strength second" data-ot="Will have an effect regardless of it is defended against or not.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="ew_feint" class="strength third disabled" title="Attack has no effect if it is not defended against. Only possible when attack cost is 2.">
+            <div id="ew_feint" class="strength third disabled" data-ot="Will have no effect whether defended against or not. Only possible when attack cost is 2.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
           </div>
-          <div id="psyop_actions" class="actions_container" title="Removes pawn furthest from their king. Removes furthest piece if they have no pawns. Removes the king if they have no other pieces.">
-            <div id="psyop_main" class="iw_main"></div>
-            <div id="psyop_normal" class="strength first">
+          <div id="psyop_actions" class="actions_container">
+            <div id="psyop_main" class="iw_main" data-ot="Removes pawn furthest from their king. Removes furthest piece if they have no pawns. Removes the king if they have no other pieces."></div>
+            <div id="psyop_normal" class="strength first" data-ot="Will have no effect if defended against.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="psyop_reinforced" class="strength second" title="Reinforced attacks are indefensible.">
+            <div id="psyop_reinforced" class="strength second" data-ot="Will have an effect regardless of it is defended against or not.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
-            <div id="psyop_feint" class="strength third disabled" title="Attack has no effect if it is not defended against. Only possible when attack cost is 2.">
+            <div id="psyop_feint" class="strength third disabled" data-ot="Will have no effect whether defended against or not. Only possible when attack cost is 2.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
           </div>
           <div id="end_turn">
+          </div>
+          <div id="end_move" class="selectable" style="display:none">
           </div>
           <div id="last_turn_report">
             <span class="header">Last turn:</span>

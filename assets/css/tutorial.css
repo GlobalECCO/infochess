@@ -1,0 +1,181 @@
+.tutorialBackground {
+  background-color:rgba(115, 160, 173, 0.60);
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 30000;
+}
+
+.tutorialForeground {
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 40000;
+}
+
+.tutorialButtonContainer {
+  z-index: 50000;
+}
+
+.boundingBox {
+  position: fixed;
+  outline: white;
+  outline-style: solid;
+  border: yellow;
+  border-style: solid;
+  margin-left: -20px;
+  margin-top: -20px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  z-index: 30000;
+}
+
+.highlightCircle {
+  position: fixed;
+  outline: yellow;
+  outline-style: solid;
+
+  animation-duration: 1s;
+  animation-name: pulse-size;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: pulse-size;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse-size
+{
+  0%
+  {
+     transform: scale(0.9, 0.9);
+  }
+
+  50%
+  {
+     transform: scale(1.2, 1.2);
+  }
+
+  100%
+  {
+     transform: scale(0.9, 0.9);
+  }
+}
+
+@-webkit-keyframes pulse-size
+{
+  0%
+  {
+     -webkit-transform: scale(0.9, 0.9);
+  }
+
+  50%
+  {
+     -webkit-transform: scale(1.2, 1.2);
+  }
+
+  100%
+  {
+     -webkit-transform: scale(0.9, 0.9);
+  }
+}
+
+.tutorialButtonContainer
+{
+  position: fixed;
+  padding: 2px;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -12.5%;
+}
+
+.tutorialLabel
+{
+  display: inline-block;
+  font-family: FollowTheMoneyFont;
+  color: white;
+}
+
+.tutorialButton
+{
+  text-align: center;
+  background-color: #26537c;
+  cursor: pointer;
+  width: 76px;
+  height: 20px;
+  font-family: FollowTheMoneyFont;
+  vertical-align: middle;
+  color: #ffffff;
+  margin: 4px;
+  /*padding-top: 0px;*/
+  text-transform: lowercase;
+  box-shadow: 2px 2px 6px 0px #141414;
+  border: outset;
+  border-color: #26537c;
+  border-width: 2px;
+
+  /*Kind of like the styles of the Tooltip's tutorialActionTips style*/
+  background: -webkit-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
+  background: -o-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
+  background: -moz-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
+  background: linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
+  border: solid 3px #FFFFFF;
+}
+
+.tutorialButton:hover
+{
+  background-color: #ff9500;
+  color: #0a0a0a;
+
+  border: outset;
+  border-color: #ff9500;
+  border-width: 2px;
+}
+
+.tutorialButton:active
+{
+  background-color: #a61d00;
+
+  border: inset;
+  border-color: red;
+  border-width: 2px;
+}
+
+.restartTutorialButton
+{
+  display: inline-block;
+  width: auto;
+  padding: 4px
+}
+
+.endTutorialButton
+{
+  display: inline-block;
+  width: auto;
+  padding: 4px
+}
+
+.nextTutorialButton
+{
+  float: left;
+}
+
+/*openTips font size overwrite for the tip contents*/
+.style-tutorialTips .ot-content
+{
+  font-size: 16px !important;
+  color: black;
+}
+
+.style-tutorialTips .ot-title
+{
+  color: black;
+}
+
+.style-tutorialActionTips .ot-content
+{
+  font-size: 14px !important;
+  color: #FFFFFF;
+}

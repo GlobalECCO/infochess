@@ -460,6 +460,24 @@ img.vertical-aligner {
           background-size:100%;
 }
 
+#end_move {
+  cursor: hand;
+  cursor: pointer;
+  position: absolute;
+  -webkit-border-radius:30px;
+     -moz-border-radius:30px;
+          border-radius:30px;
+  width: 236px;
+  height: 72px;
+  top: 377px;
+  left: 106px;
+  background: top left no-repeat url('../images/end_move.png');
+  -webkit-background-size:100%;
+     -moz-background-size:100%;
+       -o-background-size:100%;
+          background-size:100%;
+}
+
 #last_turn_report {
   position: absolute;
   top: 454px;
@@ -1015,16 +1033,28 @@ body.black .board {
 .shadow_piece {
   opacity: 0.4;
 }
-.shadow_piece, .soldier_piece, .temp_piece, .normal_piece, .invisible_piece, .psyop_capture {
+
+.shadow_piece {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: 14px;
+}
+
+.soldier_piece, .temp_piece, .normal_piece, .invisible_piece, .psyop_capture {
   position: absolute;
   width: 68px;
   height: 68px;
   margin: 3px;
 }
 
+.clickable, .shadow_piece, .removal_marker {
+  cursor: pointer;
+}
+
 .invisible_piece {
   /* done in JS so that we can reanimate the gif without reloading it
-    background: top left no-repeat url('../images/invisible_piece.gif'); 
+    background: top left no-repeat url('../images/invisible_piece.gif');
   */
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -1147,6 +1177,10 @@ body.black .board {
   background: top left no-repeat url('../images/pawn_black-invisible.68x68.png');
 }
 
+.shadow_piece {
+  background-size: contain;
+}
+
 .intersection {
   width: 60px;
   height: 60px;
@@ -1157,7 +1191,6 @@ body.black .board {
   float: left;
   color: white;
 }
-
 
 .square_hover {
   background-color: rgb(255, 255, 0) !important;

@@ -1,5 +1,4 @@
 .selectable {
-  cursor: hand;
   cursor: pointer;
   -webkit-animation:selectable 1700ms ease-in-out infinite;
      -moz-animation:selectable 1700ms ease-in-out infinite;
@@ -678,6 +677,7 @@ ul#pieces_list > li {
 }
 
 .setting_button {
+  cursor: pointer;
   padding: 1px;
   position: relative;
   height: 25px;
@@ -1225,7 +1225,8 @@ body.black .board {
   z-index: 50000;
   text-align: center;
   color: #EE4;
-  background: #11FF99;
+  background: #7B9388;
+  border: #A9E6CE solid 3px;
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;
@@ -1247,6 +1248,14 @@ body.black .board {
 }
 .flash .success {
   color: rgb(19, 220, 89);
+}
+
+#flashes {
+  display: none;
+}
+
+#modalMessageOverlay {
+  display: none;
 }
 
 .MOVE, .PSYOP_ATTACK, .EW_ATTACK, .IW_DEFEND, .IW_IGNORE, .PAWN_UPGRADE, .END_TURN {

@@ -1,5 +1,4 @@
 .selectable {
-  cursor: hand;
   cursor: pointer;
   -webkit-animation:selectable 1700ms ease-in-out infinite;
      -moz-animation:selectable 1700ms ease-in-out infinite;
@@ -678,6 +677,7 @@ ul#pieces_list > li {
 }
 
 .setting_button {
+  cursor: pointer;
   padding: 1px;
   position: relative;
   height: 25px;

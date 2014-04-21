@@ -1254,6 +1254,10 @@ body.black .board {
   display: none;
 }
 
+#modalMessageOverlay {
+  display: none;
+}
+
 @-webkit-keyframes flash-left {
   0% {
     opacity: 0;

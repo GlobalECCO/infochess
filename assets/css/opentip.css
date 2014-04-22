@@ -207,7 +207,7 @@
   text-align: center;
   cursor: default;
   text-transform: capitalize;
-  color: black;
+  color: rgb(154, 255, 206);
 }
 .ot-content
 {
@@ -215,7 +215,7 @@
   cursor: default;
   font-family: sans-serif;
   font-size: 14px;
-  color: black;
+  color: rgb(154, 255, 206);
 }
 @-moz-keyframes otloading {
   0% {

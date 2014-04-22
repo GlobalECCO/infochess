@@ -1,5 +1,5 @@
 .selectable {
-  cursor: pointer;
+  cursor: pointer !important;
   -webkit-animation:selectable 1700ms ease-in-out infinite;
      -moz-animation:selectable 1700ms ease-in-out infinite;
       -ms-animation:selectable 1700ms ease-in-out infinite;
@@ -274,6 +274,7 @@ img.vertical-aligner {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
+  cursor: default;
 }
 
 #action_selector {

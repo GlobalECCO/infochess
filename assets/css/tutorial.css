@@ -165,23 +165,16 @@
 /*openTips font size overwrite for the tip contents*/
 .style-tutorialTips .ot-content
 {
-  line-height: 100%;
-  font-size: 14px !important;
   color: black;
 }
 
 .style-tutorialTips .ot-title
 {
-  line-height: 100%;
-  padding-bottom: 5px;
-  font-size: 16px !important;
   color: black;
 }
 
 .style-tutorialActionTips .ot-content
 {
-  line-height: 100%;
-  font-size: 14px !important;
   color: #FFFFFF;
 }
 

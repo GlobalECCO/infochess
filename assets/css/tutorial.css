@@ -184,3 +184,30 @@
   font-size: 14px !important;
   color: #FFFFFF;
 }
+
+.costCycleTable
+{
+  text-align: center;
+  vertical-align: middle;
+  empty-cells: hide;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 5px 3px;
+  table-layout: fixed;
+  width: 260px;
+}
+
+.costCycleTable tr:not(:first-child) th
+{
+  text-align: right;
+}
+
+.costCycleTable td
+{
+  border: 1px solid black;
+}
+
+.costCycleTable tr:nth-child(odd) td
+{
+  background-color: rgba(128, 128, 128, 0.25);
+}

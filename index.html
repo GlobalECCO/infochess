@@ -34,6 +34,7 @@
         <span class="text {{type}}">{{text}}</span>
       </div>
     </script>
+
     <script id="iw_defense_dialog" type="text/html">
       <div id="iw_defense_dialog_{{type}}" class="iw_defense_dialog">
         <div id="defend" class="button">
@@ -45,45 +46,19 @@
         <div id="remaining_points" class="points_indicator"></div>
       </div>
     </script>
+
+    <script id="flashMessage" type="text/html">
+      <div class="flash">
+        <div class="main">{{line1}}</div>
+        <div class="message {{outcome}}">{{line2}}</div>
+      </div>
+    </script>
+
   </head>
   <body>
     <input type="hidden" id="username" value="player" />
     <div id='modalMessageOverlay' class='ui-widget-overlay ui-front'></div>
-    <div id="flashes">
-      <div class="psyop attacker success flash">
-        <div class="main">Psyop Attack</div>
-        <div class="message success">Success!</div>
-      </div>
-      <div class="psyop attacker defended flash">
-        <div class="main">Psyop Attack</div>
-        <div class="message failure">DEFENDED!</div>
-      </div>
-      <div class="psyop defender success flash">
-        <div class="main">Psyop Defense</div>
-        <div class="message failure">Failed - Piece lost</div>
-      </div>
-      <div class="psyop defender defended flash">
-        <div class="main">Psyop Defense</div>
-        <div class="message success">Attack defeated!</div>
-      </div>
-
-      <div class="ew attacker success flash">
-        <div class="main">E-Warfare Attack</div>
-        <div class="message success">Attack Successful!</div>
-      </div>
-      <div class="ew attacker defended flash">
-        <div class="main">E-Warfare Attack</div>
-        <div class="message failure">Attack Unsuccessful!</div>
-      </div>
-      <div class="ew defender success flash">
-        <div class="main">E-Warfare Defense</div>
-        <div class="message failure">Failed: Comms jammed!</div>
-      </div>
-      <div class="ew defender defended flash">
-        <div class="main">E-Warfare Defense</div>
-        <div class="message success">Attack defeated!</div>
-      </div>
-    </div>
+    <div id="flashes"></div>
     <div id="settings_dialog" class="dialog">
       <div class="dialog_content_wrapper">
         <div id="settings_content" class="dialog_content">

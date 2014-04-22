@@ -30,7 +30,8 @@ Liferay Stub
 
 The Liferay stub is defined in Raven and mimics the behaviour of the ECCO liferay server. This includes retrieving player profiles and sending game updates. By default the following users are defined:
 1. `foo`
-1. `bar`
+2. `bar`
+3. `obs`
 
 If `DISABLE_CAS=true` in your `.env` file is not set, these user accounts must be created on your CAS server.
 

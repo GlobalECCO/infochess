@@ -1243,10 +1243,10 @@ body.black .board {
   font-weight: bold;
   font-size: 45px;
 }
-.flash .failure {
+.flash .lose {
   color: #f03030;
 }
-.flash .success {
+.flash .win {
   color: rgb(19, 220, 89);
 }
 

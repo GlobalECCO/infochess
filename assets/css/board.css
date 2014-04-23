@@ -461,6 +461,35 @@ img.vertical-aligner {
           background-size:100%;
 }
 
+#flip_orientation {
+  position: absolute;
+  display: none;
+  background: top left no-repeat url('../images/flip_orientation.png');
+  top: 295px;
+  left: 640px;
+  width: 36px;
+  height: 36px;
+}
+
+#flip_orientation:hover {
+  -webkit-filter: brightness(1.5);
+  -moz-filter: brightness(1.5);
+  -ms-filter: brightness(1.5);
+  filter: brightness(1.5);
+}
+
+#flip_orientation:active {
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+  -ms-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+
+#orientation_label {
+  position: absolute;
+  top: 40px;
+}
+
 #end_turn {
   cursor: hand;
   cursor: pointer;

@@ -283,20 +283,40 @@ img.vertical-aligner {
   width: 446px;
 }
 
+#action_selector #ew_points_indicator,
+#action_selector #psyop_points_indicator,
+#action_selector #ew_points_indicator_white,
+#action_selector #psyop_points_indicator_white,
+#action_selector #ew_points_indicator_black,
+#action_selector #psyop_points_indicator_black {
+  position: absolute;
+  left: 20px;
+  width: 400px;
+  height: 40px;
+}
+
 #action_selector #ew_points_indicator {
-  position: absolute;
   top: 0px;
-  left: 20px;
-  width: 400px;
-  height: 40px;
 }
+
 #action_selector #psyop_points_indicator {
-  position: absolute;
   top: 25px;
-  left: 20px;
-  width: 400px;
-  height: 40px;
 }
+
+#action_selector #ew_points_indicator_white {
+  top: 25px;
+}
+#action_selector #psyop_points_indicator_white {
+  top: 50px;
+}
+
+#action_selector #ew_points_indicator_black {
+  top: 100px;
+}
+#action_selector #psyop_points_indicator_black {
+  top: 125px;
+}
+
 .points_indicator * {
   position: relative;
   top: 7px;
@@ -305,6 +325,12 @@ img.vertical-aligner {
 }
 .points_indicator span {
   text-align: center;
+}
+.points_indicator span.title-above {
+  width: 100%;
+  top: -15px;
+  height: 0px;
+  font-weight: bold;
 }
 .points_indicator span.title {
   width: 118px;
@@ -953,7 +979,7 @@ ul li.separator {
   font-weight: initial;
 }
 
-body.white .board {
+body.white .board, body.observer .board {
   background: top left no-repeat url('../images/board_base-white.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;

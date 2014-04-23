@@ -975,7 +975,7 @@ ul li.separator {
   font-weight: initial;
 }
 
-body.white .board {
+body.white .board, body.observer .board {
   background: top left no-repeat url('../images/board_base-white.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;

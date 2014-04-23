@@ -621,6 +621,10 @@ img.vertical-aligner {
   color: grey;
 }
 
+.piece_selector.chosen {
+  background: rgb(250,250,210);
+}
+
 img.piece {
   height: 50px;
   width: 50px;

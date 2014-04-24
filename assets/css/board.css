@@ -1220,7 +1220,7 @@ body.observer_flipped .board {
   color: rgb(159, 159, 159);
 }
 
-#board .selected {
+#board_table .selected {
   -webkit-animation: myanim 1s ease-in-out infinite; /* Saf5, Chrome */
      -moz-animation: myanim 1s ease-in-out infinite; /* FF5+ */
       -ms-animation: myanim 1s ease-in-out infinite;

@@ -1106,44 +1106,60 @@ ul li.separator {
 }
 
 body.white .board {
-  background: top left no-repeat url('../images/board_base-white.jpg');
+  background: top left no-repeat url('../images/board_base.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
 }
 body.black .board {
-  background: top left no-repeat url('../images/board_base-black.jpg');
+  background: top left no-repeat url('../images/board_base.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+      -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
 }
 body.observer .board {
-  background: top left no-repeat url('../images/board_base-observer.jpg');
+  background: top left no-repeat url('../images/board_base.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
+  -webkit-transform:rotate(270deg);
+     -moz-transform:rotate(270deg);
+      -ms-transform:rotate(270deg);
+          transform:rotate(270deg);
 }
 body.observer_flipped .board {
-  background: top left no-repeat url('../images/board_base-observer_flipped.jpg');
+  background: top left no-repeat url('../images/board_base.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
+  -webkit-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+          transform:rotate(90deg);
 }
 
-.board {
+.board_table {
   position: relative;
   top: 64px;
   left: 54px;
   float: left;
 
+  width: 624px;
+  height: 624px;
+  z-index: 99;
+}
+.board {
+  padding: 18px;
   width: 588px;
   height: 588px;
-  padding: 18px;
-  z-index: 99;
 }
 .board_overlay {
   position: absolute;

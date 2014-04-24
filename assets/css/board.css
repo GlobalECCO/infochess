@@ -74,6 +74,7 @@ div  {
 body {
   background: #111;
   color: white;
+  overflow: hidden;
 }
 
 #waiting {

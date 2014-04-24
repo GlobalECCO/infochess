@@ -75,6 +75,7 @@ body {
   background: #111;
   color: white;
   overflow: hidden;
+  margin: 0px;
 }
 
 .no_highlights {

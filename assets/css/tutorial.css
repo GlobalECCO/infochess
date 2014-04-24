@@ -115,26 +115,23 @@
   border-radius: 5px;
 
   /*Kind of like the styles of the Tooltip's tutorialActionTips style*/
-  background: -webkit-linear-gradient(rgb(50, 50, 50),rgb(50, 50, 50), rgb(30, 30, 30),rgb(30, 30, 30));
-  background: -o-linear-gradient(rgb(50, 50, 50),rgb(50, 50, 50), rgb(30, 30, 30),rgb(30, 30, 30));
-  background: -moz-linear-gradient(rgb(50, 50, 50),rgb(50, 50, 50), rgb(30, 30, 30),rgb(30, 30, 30));
-  background: linear-gradient(rgb(50, 50, 50),rgb(50, 50, 50), rgb(30, 30, 30),rgb(30, 30, 30));
+  background: -webkit-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -o-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -moz-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
 }
 
 .tutorialButton:hover
 {
-  background-color: #ff9500;
-  color: #ff9500;
-
+  color: yellow;
   border: outset;
-  border-color: #ff9500;
+  border-color: yellow;
   border-width: 2px;
 }
 
 .tutorialButton:active
 {
-  background-color: #a61d00;
-
+  color: rgb(255, 75, 75);
   border: inset;
   border-color: red;
   border-width: 2px;

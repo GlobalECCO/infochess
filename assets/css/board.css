@@ -432,14 +432,14 @@ img.vertical-aligner {
 .strength.first {
   width: 195px;
   top: 47px;
-  background: top left no-repeat url('../images/iw_normal_enabled.png');
+  background: top left no-repeat url('../images/iw_feint_enabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
 }
 .strength.first.disabled {
-  background: top left no-repeat url('../images/iw_normal_disabled.png');
+  background: top left no-repeat url('../images/iw_feint_disabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
@@ -448,14 +448,14 @@ img.vertical-aligner {
 .strength.second {
   width: 207px;
   top: 76px;
-  background: top left no-repeat url('../images/iw_reinforced_enabled.png');
+  background: top left no-repeat url('../images/iw_normal_enabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
 }
 .strength.second.disabled {
-  background: top left no-repeat url('../images/iw_reinforced_disabled.png');
+  background: top left no-repeat url('../images/iw_normal_disabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
@@ -464,14 +464,14 @@ img.vertical-aligner {
 .strength.third {
   width: 221px;
   top: 106px;
-  background: top left no-repeat url('../images/iw_feint_enabled.png');
+  background: top left no-repeat url('../images/iw_reinforced_enabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;
           background-size:100%;
 }
 .strength.third.disabled {
-  background: top left no-repeat url('../images/iw_feint_disabled.png');
+  background: top left no-repeat url('../images/iw_reinforced_disabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;

@@ -36,13 +36,13 @@
     </script>
 
     <script id="iw_defense_dialog" type="text/html">
-      <div id="iw_defense_dialog_{{type}}" class="iw_defense_dialog">
-        <div id="defend" class="button">
+      <div id="iw_defense_dialog_{{type}}" class="iw_defense_dialog no_highlights">
+        <div id="defend" class="button-{{status}}">
           <div id="cost_wrapper">
-            Cost: <span id="cost">{{cost}}</span>
+            <span id="cost">Cost: {{cost}}</span>
           </div>
         </div>
-        <div id="ignore" class="button"></div>
+        <div id="ignore" class="button-enabled"></div>
         <div id="remaining_points" class="points_indicator"></div>
       </div>
     </script>

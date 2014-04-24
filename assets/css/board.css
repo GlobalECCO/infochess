@@ -1075,13 +1075,13 @@ ul li.separator {
        -o-background-size:100%;
           background-size:100%;
 }
-.iw_defense_dialog .button {
+.iw_defense_dialog .button-enabled, .iw_defense_dialog .button-disabled {
   position: absolute;
   top: 114px;
   width: 166px;
   height: 80px;
 }
-.iw_defense_dialog .button:hover {
+.iw_defense_dialog .button-enabled:hover {
   outline: 2px solid red;
   cursor: hand;
   cursor: pointer;
@@ -1106,6 +1106,14 @@ ul li.separator {
   left: 173px;
   width: 250px;
   height: 30px;
+}
+.iw_defense_dialog .button-disabled {
+  /*background-color: gray;*/
+  /*opacity: 0.5;*/
+}
+.iw_defense_dialog .button-disabled #cost {
+  color: red;
+  font-weight: bold;
 }
 
 #message {

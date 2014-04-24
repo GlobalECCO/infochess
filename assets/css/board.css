@@ -77,6 +77,14 @@ body {
   overflow: hidden;
 }
 
+.no_highlights {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #waiting {
   float: left;
   width: 600px;
@@ -492,12 +500,8 @@ img.vertical-aligner {
   top: 40px;
   left: -10px;
   width: 58px;
-  cursor: pointer;
   text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  cursor: pointer;
 }
 
 #coord01, #coord02, #coord03, #coord04, #coord05, #coord06, #coord07, #coord08, #coord09, #coord10, #coord11, #coord12, #coord13, #coord14, #coord15, #coord16 {

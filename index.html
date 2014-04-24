@@ -144,29 +144,29 @@
         <div id="board" class="board"></div>
         <div id="pieces" class="board_overlay"></div>
         <div id="opponent_status"></div>
-        <div id="pawn_capture" class="clickable" data-ot="See if any pawns can capture an invisible piece. If they can, that move must be taken.">
+        <div id="pawn_capture" class="clickable no_highlights" data-ot="See if any pawns can capture an invisible piece. If they can, that move must be taken.">
           <img src="images/transparent_pixel.gif" class="vertical-aligner">
           Pawn Capture
         </div>
-        <div id="flip_orientation" data-ot="Flip the orientation of the board you are viewing." data-ot-tip-joint="bottom left">
+        <div id="flip_orientation" class="no_highlights" data-ot="Flip the orientation of the board you are viewing." data-ot-tip-joint="bottom left">
           <div id="orientation_label">white</div>
         </div>
-        <div id="coord01">8</div>
-        <div id="coord02">7</div>
-        <div id="coord03">6</div>
-        <div id="coord04">5</div>
-        <div id="coord05">4</div>
-        <div id="coord06">3</div>
-        <div id="coord07">2</div>
-        <div id="coord08">1</div>
-        <div id="coord09">A</div>
-        <div id="coord10">B</div>
-        <div id="coord11">C</div>
-        <div id="coord12">D</div>
-        <div id="coord13">E</div>
-        <div id="coord14">F</div>
-        <div id="coord15">G</div>
-        <div id="coord16">H</div>
+        <div id="coord01" class="no_highlights">8</div>
+        <div id="coord02" class="no_highlights">7</div>
+        <div id="coord03" class="no_highlights">6</div>
+        <div id="coord04" class="no_highlights">5</div>
+        <div id="coord05" class="no_highlights">4</div>
+        <div id="coord06" class="no_highlights">3</div>
+        <div id="coord07" class="no_highlights">2</div>
+        <div id="coord08" class="no_highlights">1</div>
+        <div id="coord09" class="no_highlights">A</div>
+        <div id="coord10" class="no_highlights">B</div>
+        <div id="coord11" class="no_highlights">C</div>
+        <div id="coord12" class="no_highlights">D</div>
+        <div id="coord13" class="no_highlights">E</div>
+        <div id="coord14" class="no_highlights">F</div>
+        <div id="coord15" class="no_highlights">G</div>
+        <div id="coord16" class="no_highlights">H</div>
       </div>
       <div id="side_area">
         <div id="settings_overlay">
@@ -195,19 +195,19 @@
           </div>
         </div>
         <div id="action_selector" class="side_selector">
-          <div id="psyop_points_indicator" class="points_indicator">
+          <div id="psyop_points_indicator" class="points_indicator no_highlights">
           </div>
-          <div id="ew_points_indicator" class="points_indicator">
+          <div id="ew_points_indicator" class="points_indicator no_highlights">
           </div>
-          <div id="psyop_points_indicator_white" class="points_indicator">
+          <div id="psyop_points_indicator_white" class="points_indicator no_highlights">
           </div>
-          <div id="ew_points_indicator_white" class="points_indicator">
+          <div id="ew_points_indicator_white" class="points_indicator no_highlights">
           </div>
-          <div id="psyop_points_indicator_black" class="points_indicator">
+          <div id="psyop_points_indicator_black" class="points_indicator no_highlights">
           </div>
-          <div id="ew_points_indicator_black" class="points_indicator">
+          <div id="ew_points_indicator_black" class="points_indicator no_highlights">
           </div>
-          <div id="ew_actions" class="actions_container">
+          <div id="ew_actions" class="actions_container no_highlights">
             <div id="ew_main" class="iw_main" data-ot-title="Electronic Warfare Attack" data-ot="Causes your opponent to skip their physical move. They may still make an IW attack."></div>
             <div id="ew_normal" class="strength first" data-ot-title="Normal Attack" data-ot="Will have no effect if defended against.">
               <span id="value"></span>
@@ -222,8 +222,8 @@
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
             </div>
           </div>
-          <div id="psyop_actions" class="actions_container">
-            <div id="psyop_main" class="iw_main" data-ot-title="Psyops Attack" data-ot="Removes a piece furthest from their king, starting with any pawns first. Removes the king if they have no other pieces."></div>
+          <div id="psyop_actions" class="actions_container no_highlights">
+            <div id="psyop_main" class="iw_main no_highlights" data-ot-title="Psyops Attack" data-ot="Removes a piece furthest from their king, starting with any pawns first. Removes the king if they have no other pieces."></div>
             <div id="psyop_normal" class="strength first" data-ot-title="Normal Attack" data-ot="Will have no effect if defended against.">
               <span id="value"></span>
               <img src="images/transparent_pixel.gif" class="vertical-aligner">
@@ -245,8 +245,8 @@
             <span class="header">Last turn:</span>
             <span id="content"></span>
           </div>
-          <div id="turn_count_container">
-            Turn #<span id="turn_count"></span>
+          <div id="turn_count_container" class="no_highlights">
+            Turn #<span id="turn_count" class="no_highlights"></span>
           </div>
         </div>
         <div id="text_panels">
@@ -270,7 +270,7 @@
       <div id="dashboard" class="overlay_flash">
         <div class="dashboard_section">
           <img src="images/transparent_pixel.gif" class="vertical-aligner">
-          <span id="status">Connecting to server...</span>
+          <span id="status" class="no_highlights">Connecting to server...</span>
         </div>
       </div>
     </div>

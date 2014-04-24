@@ -16,6 +16,18 @@
 }
 
 .tutorialButtonContainer {
+  left: 15px;
+  top: 14px;
+  position: fixed;
+  padding: 2px;
+  padding-left: 6px;
+  background: -webkit-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: -o-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: -moz-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  color: black;
+  border: 2px black solid;
+  border-radius: 5px;
   z-index: 50000;
 }
 
@@ -82,62 +94,44 @@
   }
 }
 
-.tutorialButtonContainer
-{
-  position: fixed;
-  padding: 2px;
-  left: 50%;
-  bottom: 0px;
-  margin-left: -12.5%;
-}
-
 .tutorialLabel
 {
   display: inline-block;
-  font-family: FollowTheMoneyFont;
-  color: white;
+  font-family: sans-serif;
 }
 
 .tutorialButton
 {
   text-align: center;
-  background-color: #26537c;
   cursor: pointer;
   width: 76px;
   height: 20px;
-  font-family: FollowTheMoneyFont;
+  font-family: sans-serif;
   vertical-align: middle;
-  color: #ffffff;
   margin: 4px;
-  /*padding-top: 0px;*/
-  text-transform: lowercase;
   box-shadow: 2px 2px 6px 0px #141414;
-  border: outset;
-  border-color: #26537c;
-  border-width: 2px;
+  border: solid 2px black;
+  color: white;
+  border-radius: 5px;
 
   /*Kind of like the styles of the Tooltip's tutorialActionTips style*/
-  background: -webkit-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
-  background: -o-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
-  background: -moz-linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
-  background: linear-gradient(rgb(102,102,102),rgb(102,102,102), rgb(85,85,85),rgb(85,85,85));
-  border: solid 3px #FFFFFF;
+  background: -webkit-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -o-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -moz-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
 }
 
 .tutorialButton:hover
 {
-  background-color: #ff9500;
-  color: #0a0a0a;
-
+  color: yellow;
   border: outset;
-  border-color: #ff9500;
+  border-color: yellow;
   border-width: 2px;
 }
 
 .tutorialButton:active
 {
-  background-color: #a61d00;
-
+  color: rgb(255, 75, 75);
   border: inset;
   border-color: red;
   border-width: 2px;

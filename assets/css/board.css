@@ -464,6 +464,7 @@ img.vertical-aligner {
 #flip_orientation {
   position: absolute;
   display: none;
+  cursor: pointer;
   background: top left no-repeat url('../images/flip_orientation.png');
   top: 295px;
   left: 640px;
@@ -488,6 +489,101 @@ img.vertical-aligner {
 #orientation_label {
   position: absolute;
   top: 40px;
+  left: -10px;
+  width: 58px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#coord01, #coord02, #coord03, #coord04, #coord05, #coord06, #coord07, #coord08, #coord09, #coord10, #coord11, #coord12, #coord13, #coord14, #coord15, #coord16 {
+  position: absolute;
+  top: 588px;
+  left: 22px;
+  display: none;
+  font-weight: bold;
+  font-size: 17px;
+  opacity: 0.4;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+#coord01, #coord02, #coord03, #coord04, #coord05, #coord06, #coord07, #coord08 {
+  /*font-size: 20px;*/
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+}
+
+#coord01 {
+  top: 15px;
+}
+
+#coord02 {
+  top: 88px;
+}
+
+#coord03 {
+  top: 161px;
+}
+
+#coord04 {
+  top: 235px;
+}
+
+#coord05 {
+  top: 309px;
+}
+
+#coord06 {
+  top: 383px;
+}
+
+#coord07 {
+  top: 457px;
+}
+
+#coord08 {
+  top: 531px;
+}
+
+#coord09 {
+  left: 20px;
+}
+
+#coord10 {
+  left: 93px;
+}
+
+#coord11 {
+  left: 167px;
+}
+
+#coord12 {
+  left: 241px;
+}
+
+#coord13 {
+  left: 315px;
+}
+
+#coord14 {
+  left: 389px;
+}
+
+#coord15 {
+  left: 463px;
+}
+
+#coord16 {
+  left: 537px;
 }
 
 #end_turn {
@@ -1008,7 +1104,7 @@ ul li.separator {
   font-weight: initial;
 }
 
-body.white .board, body.observer .board {
+body.white .board {
   background: top left no-repeat url('../images/board_base-white.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
@@ -1017,6 +1113,20 @@ body.white .board, body.observer .board {
 }
 body.black .board {
   background: top left no-repeat url('../images/board_base-black.jpg');
+  -webkit-background-size:100%;
+     -moz-background-size:100%;
+       -o-background-size:100%;
+          background-size:100%;
+}
+body.observer .board {
+  background: top left no-repeat url('../images/board_base-observer.jpg');
+  -webkit-background-size:100%;
+     -moz-background-size:100%;
+       -o-background-size:100%;
+          background-size:100%;
+}
+body.observer_flipped .board {
+  background: top left no-repeat url('../images/board_base-observer_flipped.jpg');
   -webkit-background-size:100%;
      -moz-background-size:100%;
        -o-background-size:100%;

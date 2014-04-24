@@ -313,17 +313,17 @@ img.vertical-aligner {
 }
 
 #action_selector #ew_points_indicator_white {
-  top: 25px;
+  top: 15px;
 }
 #action_selector #psyop_points_indicator_white {
-  top: 50px;
+  top: 40px;
 }
 
 #action_selector #ew_points_indicator_black {
-  top: 100px;
+  top: 85px;
 }
 #action_selector #psyop_points_indicator_black {
-  top: 125px;
+  top: 110px;
 }
 
 .points_indicator * {
@@ -337,7 +337,7 @@ img.vertical-aligner {
 }
 .points_indicator span.title-above {
   width: 100%;
-  top: -15px;
+  top: -12px;
   height: 0px;
   font-weight: bold;
 }
@@ -368,6 +368,12 @@ img.vertical-aligner {
   width: 367px;
   height: 160px;
   left: 38px;
+}
+.ew_observer_actions {
+  top: 140px !important;
+}
+.psyop_observer_actions {
+  top: 290px !important;
 }
 
 #ew_main {
@@ -419,7 +425,8 @@ img.vertical-aligner {
   cursor: auto !important;
 }
 .strength.disabled span {
-  color: rgb(89, 118, 99);
+  /*color: rgb(89, 118, 99);*/
+  color: rgb(119, 148, 129);
 }
 .strength.first {
   width: 195px;

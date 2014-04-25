@@ -2223,13 +2223,10 @@ Opentip.setEnabled = function(enabled) {
   }
 };
 
-Opentip.hideTips = function(full) {
+Opentip.hideTips = function() {
   for (var i = 0; i < Opentip.tips.length; i++) {
     var tip = Opentip.tips[i];
-
-    if (full || tip.options.extends !== "adviceTips") {
-      tip.hide();
-    }
+    tip.hide();
   }
 }
 

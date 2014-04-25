@@ -33,10 +33,7 @@
 
 .boundingBox {
   position: fixed;
-  outline: white;
-  outline-style: solid;
-  border: yellow;
-  border-style: solid;
+  border: 2px solid rgb(154, 255, 206);
   margin-left: -20px;
   margin-top: -20px;
   padding-right: 30px;
@@ -45,52 +42,33 @@
 }
 
 .highlightCircle {
+  cursor: pointer;
   position: fixed;
-  outline: yellow;
-  outline-style: solid;
-
-  animation-duration: 1s;
-  animation-name: pulse-size;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-duration: 1s;
-  -webkit-animation-name: pulse-size;
-  -webkit-animation-iteration-count: infinite;
+  outline: 3px solid rgb(154, 255, 206);
+  -webkit-animation:pulse-size 1000ms ease-in-out infinite;
+     -moz-animation:pulse-size 1000ms ease-in-out infinite;
+      -ms-animation:pulse-size 1000ms ease-in-out infinite;
+       -o-animation:pulse-size 1000ms ease-in-out infinite;
+          animation:pulse-size 1000ms ease-in-out infinite;
 }
 
-@keyframes pulse-size
-{
-  0%
-  {
-     transform: scale(0.9, 0.9);
+@keyframes pulse-size {
+  0%, 100% {
+    outline-width: 3px;
   }
 
-  50%
-  {
-     transform: scale(1.2, 1.2);
-  }
-
-  100%
-  {
-     transform: scale(0.9, 0.9);
+  50% {
+    outline-width: 7px;
   }
 }
 
-@-webkit-keyframes pulse-size
-{
-  0%
-  {
-     -webkit-transform: scale(0.9, 0.9);
+@-webkit-keyframes pulse-size {
+  0%, 100% {
+    outline-width: 3px;
   }
 
-  50%
-  {
-     -webkit-transform: scale(1.2, 1.2);
-  }
-
-  100%
-  {
-     -webkit-transform: scale(0.9, 0.9);
+  50% {
+    outline-width: 7px;
   }
 }
 
@@ -169,7 +147,7 @@
 
 .style-tutorialActionTips .ot-content
 {
-  color: #FFFFFF;
+  color: rgb(154, 255, 206);
 }
 
 .costCycleTable

@@ -33,7 +33,7 @@
 
 .boundingBox {
   position: fixed;
-  border: 2px solid rgb(154, 255, 206);
+  border: 5px solid rgb(154, 255, 206);
   margin-left: -20px;
   margin-top: -20px;
   padding-right: 30px;

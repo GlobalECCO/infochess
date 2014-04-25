@@ -14,47 +14,47 @@
 }
 @keyframes selectable {
   0%, 100% {
-    outline-color: rgba(225,225,125, .0);
+    outline-color: rgba(225, 225, 125, .0);
   }
 
   50% {
-    outline-color: rgba(225,225,125, 1.0);
+    outline-color: rgba(225, 225, 125, 1.0);
   }
 }
 @-o-keyframes selectable {
   0%, 100% {
-    outline-color: rgba(225,225,125, .0);
+    outline-color: rgba(225, 225, 125, .0);
   }
 
   50% {
-    outline-color: rgba(225,225,125, 1.0);
+    outline-color: rgba(225, 225, 125, 1.0);
   }
 }
 @-ms-keyframes selectable {
   0%, 100% {
-    outline-color: rgba(225,225,125, .0);
+    outline-color: rgba(225, 225, 125, .0);
   }
 
   50% {
-    outline-color: rgba(225,225,125, 1.0);
+    outline-color: rgba(225, 225, 125, 1.0);
   }
 }
 @-moz-keyframes selectable {
   0%, 100% {
-    outline-color: rgba(225,225,125, .0);
+    outline-color: rgba(225, 225, 125, .0);
   }
 
   50% {
-    outline-color: rgba(225,225,125, 1.0);
+    outline-color: rgba(225, 225, 125, 1.0);
   }
 }
 @-webkit-keyframes selectable {
   0%, 100% {
-    outline-color: rgba(225,225,125, .0);
+    outline-color: rgba(225, 225, 125, .0);
   }
 
   50% {
-    outline-color: rgba(225,225,125, 1.0);
+    outline-color: rgba(225, 225, 125, 1.0);
   }
 }
 

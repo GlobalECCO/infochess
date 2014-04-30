@@ -12,6 +12,45 @@
      -moz-box-shadow:none;
           box-shadow:none;
 }
+.pawn_capture_source {
+  cursor: pointer !important;
+  outline: solid green;
+  position: absolute;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  width: 70px;
+  height: 70px;
+  -webkit-animation:selectable 1700ms ease-in-out infinite;
+     -moz-animation:selectable 1700ms ease-in-out infinite;
+      -ms-animation:selectable 1700ms ease-in-out infinite;
+       -o-animation:selectable 1700ms ease-in-out infinite;
+          animation:selectable 1700ms ease-in-out infinite;
+}
+.pawn_capture_source:hover {
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+.pawn_capture_target, .psyop_target {
+  cursor: pointer !important;
+  outline: solid blue;
+  position: absolute;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 65px;
+  height: 65px;
+  -webkit-animation:selectableBlue 1700ms ease-in-out infinite;
+     -moz-animation:selectableBlue 1700ms ease-in-out infinite;
+      -ms-animation:selectableBlue 1700ms ease-in-out infinite;
+       -o-animation:selectableBlue 1700ms ease-in-out infinite;
+          animation:selectableBlue 1700ms ease-in-out infinite;
+}
+.pawn_capture_target:hover, .psyop_target:hover {
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+
 @keyframes selectable {
   0%, 100% {
     outline-color: rgba(225, 225, 125, .0);
@@ -55,6 +94,98 @@
 
   50% {
     outline-color: rgba(225, 225, 125, 1.0);
+  }
+}
+
+@keyframes selectableBlue {
+  0%, 100% {
+    outline-color: rgba(0, 0, 255, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 0, 255, 1.0);
+  }
+}
+@-o-keyframes selectableBlue {
+  0%, 100% {
+    outline-color: rgba(0, 0, 255, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 0, 255, 1.0);
+  }
+}
+@-ms-keyframes selectableBlue {
+  0%, 100% {
+    outline-color: rgba(0, 0, 255, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 0, 255, 1.0);
+  }
+}
+@-moz-keyframes selectableBlue {
+  0%, 100% {
+    outline-color: rgba(0, 0, 255, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 0, 255, 1.0);
+  }
+}
+@-webkit-keyframes selectableBlue {
+  0%, 100% {
+    outline-color: rgba(0, 0, 255, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 0, 255, 1.0);
+  }
+}
+
+@keyframes selectableGreen {
+  0%, 100% {
+    outline-color: rgba(0, 102, 0, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 102, 0, 1.0);
+  }
+}
+@-o-keyframes selectableGreen {
+  0%, 100% {
+    outline-color: rgba(0, 102, 0, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 102, 0, 1.0);
+  }
+}
+@-ms-keyframes selectableGreen {
+  0%, 100% {
+    outline-color: rgba(0, 102, 0, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 102, 0, 1.0);
+  }
+}
+@-moz-keyframes selectableGreen {
+  0%, 100% {
+    outline-color: rgba(0, 102, 0, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 102, 0, 1.0);
+  }
+}
+@-webkit-keyframes selectableGreen {
+  0%, 100% {
+    outline-color: rgba(0, 102, 0, .0);
+  }
+
+  50% {
+    outline-color: rgba(0, 102, 0, 1.0);
   }
 }
 
@@ -1271,22 +1402,6 @@ body.observer_flipped .board {
 
 .castling_shadow_piece {
   border: 5px solid red;
-  z-index: 350;
-  position: absolute;
-  width: 63px;
-  height: 63px;
-}
-
-.pawn_capture_source {
-  border: 5px solid blue;
-  z-index: 350;
-  position: absolute;
-  width: 63px;
-  height: 63px;
-}
-
-.pawn_capture_target, .psyop_target {
-  border: 5px solid green;
   z-index: 350;
   position: absolute;
   width: 63px;

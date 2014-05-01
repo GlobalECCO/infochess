@@ -1409,7 +1409,8 @@ body.observer_flipped .board {
 }
 
 .invisible {
-  opacity: 0.6;
+  /* included opacity into image so this is no longer needed*/
+  /* opacity: 0.6; */
 }
 
 .removal_marker {

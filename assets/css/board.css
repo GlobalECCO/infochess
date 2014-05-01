@@ -734,13 +734,13 @@ img.vertical-aligner {
   cursor: hand;
   cursor: pointer;
   position: absolute;
-  -webkit-border-radius:30px;
-     -moz-border-radius:30px;
-          border-radius:30px;
-  width: 236px;
+  /* -webkit-border-radius:30px; */
+     /* -moz-border-radius:30px; */
+          /* border-radius:30px; */
+  width: 360px;
   height: 72px;
   top: 377px;
-  left: 106px;
+  left: 52px;
   background: top left no-repeat url('../images/end_turn_enabled.png');
   -webkit-background-size:100%;
      -moz-background-size:100%;

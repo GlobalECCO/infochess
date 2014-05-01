@@ -1049,7 +1049,7 @@ ul#pieces_list > li {
   visibility: hidden;
   width: 100%;
 }
-#offer_draw_content {
+#offer_draw_content, #suggest_offer_draw_content {
   position: absolute;
   top: 0px;
   left: 0px;

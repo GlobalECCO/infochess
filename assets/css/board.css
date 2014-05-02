@@ -1537,14 +1537,20 @@ body.observer_flipped .board {
   position: absolute;
   top: 25%;
   left: 25%;
-  width: 50%;
+  width: 575px;
+  height: 275px;
   text-shadow: 1px 1px 2px #922, 0 0 2em white, 0 0 0.4em white;
   text-transform: uppercase;
   z-index: 50000;
   text-align: center;
-  color: #EE4;
-  background: #7B9388;
-  border: #A9E6CE solid 3px;
+  color: #EBFFB6;
+  /* background: #7B9388; */
+  /* border: #A9E6CE solid 3px; */
+  background-image: url('../images/blank_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  
 }
 .flash-animation {
   -webkit-animation:flash-left 5s 1;
@@ -1555,17 +1561,27 @@ body.observer_flipped .board {
 }
 .flash .main {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 38px;
+  width: 418px;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  left: 78px;
+  position: relative;
 }
 .flash .message {
   font-weight: bold;
-  font-size: 45px;
+  font-size: 30px;
+  width: 418px;
+  left: 78px;
+  position: relative;
 }
 .flash .lose {
-  color: #f03030;
+  color: #D30B0B;
+  font-size: 42px;
 }
 .flash .win {
-  color: rgb(19, 220, 89);
+  color: #00975a;
+  font-size: 42px;
 }
 
 #flashes {
@@ -1684,4 +1700,9 @@ body.observer_flipped .board {
     transform: scale(1,1) rotate(15deg) translate(40%, 25%);
     transform-origin: center center;
   }
+}
+
+div.fullscreen {
+  background: #aaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+  opacity: .3;
 }

@@ -1,0 +1,178 @@
+.tutorialBackground {
+  background-color:rgba(115, 160, 173, 0.60);
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 30000;
+}
+
+.tutorialForeground {
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 40000;
+}
+
+.tutorialButtonContainer {
+  left: 7px;
+  top: 6px;
+  position: fixed;
+  padding: 2px;
+  padding-left: 6px;
+  background: -webkit-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: -o-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: -moz-linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  background: linear-gradient(rgb(235, 235, 235),rgb(235, 235, 235), rgb(170, 170, 170),rgb(170, 170, 170));
+  color: black;
+  border: 2px black solid;
+  border-radius: 5px;
+  z-index: 50000;
+}
+
+.boundingBox {
+  position: fixed;
+  border: 5px solid rgb(154, 255, 206);
+  margin-left: -10px;
+  margin-top: -5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  z-index: 30000;
+}
+
+.highlightCircle {
+  cursor: pointer;
+  position: fixed;
+  outline: 3px solid rgb(154, 255, 206);
+  -webkit-animation:pulse-size 1000ms ease-in-out infinite;
+     -moz-animation:pulse-size 1000ms ease-in-out infinite;
+      -ms-animation:pulse-size 1000ms ease-in-out infinite;
+       -o-animation:pulse-size 1000ms ease-in-out infinite;
+          animation:pulse-size 1000ms ease-in-out infinite;
+}
+
+@keyframes pulse-size {
+  0%, 100% {
+    outline-width: 3px;
+  }
+
+  50% {
+    outline-width: 7px;
+  }
+}
+
+@-webkit-keyframes pulse-size {
+  0%, 100% {
+    outline-width: 3px;
+  }
+
+  50% {
+    outline-width: 7px;
+  }
+}
+
+.tutorialLabel
+{
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.tutorialButton
+{
+  text-align: center;
+  cursor: pointer;
+  width: 76px;
+  height: 20px;
+  font-family: sans-serif;
+  vertical-align: middle;
+  margin: 4px;
+  box-shadow: 2px 2px 6px 0px #141414;
+  border: solid 2px black;
+  color: white;
+  border-radius: 5px;
+
+  /*Kind of like the styles of the Tooltip's tutorialActionTips style*/
+  background: -webkit-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -o-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: -moz-linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+  background: linear-gradient(rgb(100, 100, 100),rgb(100, 100, 100), rgb(60, 60, 60),rgb(60, 60, 60));
+}
+
+.tutorialButton:hover
+{
+  color: yellow;
+  border: outset;
+  border-color: yellow;
+  border-width: 2px;
+}
+
+.tutorialButton:active
+{
+  color: rgb(255, 75, 75);
+  border: inset;
+  border-color: red;
+  border-width: 2px;
+}
+
+.restartTutorialButton
+{
+  display: inline-block;
+  width: auto;
+  padding: 4px
+}
+
+.endTutorialButton
+{
+  display: inline-block;
+  width: auto;
+  padding: 4px
+}
+
+.nextTutorialButton
+{
+  float: left;
+}
+
+/*openTips font size overwrite for the tip contents*/
+.style-tutorialTips .ot-content
+{
+  color: black;
+}
+
+.style-tutorialTips .ot-title
+{
+  color: black;
+}
+
+.style-tutorialActionTips .ot-content
+{
+  color: rgb(154, 255, 206);
+}
+
+.costCycleTable
+{
+  text-align: center;
+  vertical-align: middle;
+  empty-cells: hide;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 5px 3px;
+  table-layout: fixed;
+  width: 260px;
+}
+
+.costCycleTable tr:not(:first-child) th
+{
+  text-align: right;
+}
+
+.costCycleTable td
+{
+  border: 1px solid black;
+}
+
+.costCycleTable tr:nth-child(odd) td
+{
+  background-color: rgba(128, 128, 128, 0.25);
+}

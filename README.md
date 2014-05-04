@@ -1,5 +1,6 @@
 Setup for OSX
--------------
+------------- 
+
 
 1. [Install homebrew](http://brew.sh/)
 1. `brew install node`
@@ -22,14 +23,15 @@ PREFIX="/infochess"
 PORT=3000
 ```
 1. `foreman run`
-1. `open http://localhost:3000/infochess/new?white=foo&black=bar&fmt=html&dbg=1`
+1. `open http://localhost:3000/infochess/new?white=foo&black=bar&observer=obs&fmt=html&dbg=1`
 
 Liferay Stub
 ------------
 
 The Liferay stub is defined in Raven and mimics the behaviour of the ECCO liferay server. This includes retrieving player profiles and sending game updates. By default the following users are defined:
 1. `foo`
-1. `bar`
+2. `bar`
+3. `obs`
 
 If `DISABLE_CAS=true` in your `.env` file is not set, these user accounts must be created on your CAS server.
 

@@ -1577,11 +1577,11 @@ body.observer_flipped .board {
 }
 .flash .lose {
   color: #D30B0B;
-  font-size: 42px;
+  /* font-size: 42px; */
 }
 .flash .win {
   color: #00975a;
-  font-size: 42px;
+  /* font-size: 42px; */
 }
 
 #flashes {

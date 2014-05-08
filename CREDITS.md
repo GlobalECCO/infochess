@@ -11,10 +11,14 @@ Programming
 * Kyle Chiu
 * Richard Gould
 * Eric Lawless
+* Erik Johnson
+* Eric Heine
+* Jeff Houde
 
 Art
 ---
 * Scott Keating
+* Ryan Lee
 
 Thanks
 ======

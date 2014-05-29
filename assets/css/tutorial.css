@@ -76,6 +76,7 @@
 {
   display: inline-block;
   font-family: sans-serif;
+  cursor: default;
 }
 
 .tutorialButton
